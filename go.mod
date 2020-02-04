@@ -1,4 +1,4 @@
-module guthub.com/barclakj/pipedreamconnect
+module github.com/barclakj/pipedreamconnect
 
 go 1.13
 
