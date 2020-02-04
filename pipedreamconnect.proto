@@ -1,0 +1,23 @@
+syntax = "proto3";
+package pipedreamconnect;
+
+message ConnectRequest {
+	string address = 1;
+}
+
+message AcceptRequest {
+	int32 port = 1;
+}
+
+message DisconnectRequest {
+	string address = 1;
+}
+
+message RejectRequest {
+	int32 port = 1;
+}
+
+
+service ConnectService {
+    rpc Connect(ConnectRequest) returns (ConnectRequest) { }
+}
